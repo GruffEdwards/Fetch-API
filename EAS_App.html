@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Placeholder API Fetch for Enterprise Automation</title>
+        
+    </head>
+    <body>
+        <section id="header">
+            <img id="header-img" src="https://media.licdn.com/dms/image/C4E0BAQFRZAQLsc8Dag/company-logo_200_200/0/1653040465435/enterprise_automation_services_ltd_logo?e=1717027200&v=beta&t=XeLIUzvq_DNKBWhhXqX7XA1V2LI0Sa0KYMmBm_dTYHo">
+            <h1>JSON Placeholder API Fetch for Enterprise Automation</h1>
+            <p id="header-text">Hi there! Here is my response for the EAS Trainee Applicant Task.<br/>I hope it showcases what I've learned so far!</p>
+        </section>
+        <section id="intro"></section>
+                <h2 id="subtitle">Fetch API Functions</h2>
+                <p>The following functions GET data from JSON Placeholder API.</p>
+        </section>
+
+        <section id="function1">
+            <h3>Fetch Data by ID</h3>
+            <p>Input which data set you'd like to retrieve and the ID of the data.<br/>Choose from posts, comments, albums, photos and todos.</p>
+            <select id="dropdown" for="dataType">
+                <option value="posts" name="dataType">posts</option>
+                <option value="comments" name="dataType">comments</option>
+                <option value="albums" name="dataType">albums</option>
+                <option value="photos" name="dataType">photos</option>
+                <option value="todos" name="dataType">todos</option>
+            </select>
+            <input id="postId" type="number" name="postId" placeholder="Post No."/>
+            <button onclick="fetchData()" id="submitFetch" type="button">Fetch Data</button>
+            <p id="function1Text"></p>
+            <p id="function1Result"></p>
+        </section>
+
+        <section id="function2">
+            <h3>Sort Data by ID</h3>
+            <p>Click the button to sort the data you have already fetched by its IDs.</p>
+            <button onclick="sortById()" id="sortButton" type="button">Sort Data</button>
+            <p id="function2Text"></p>
+            <p id="function2Result"></p>
+        </section>
+
+        <section id="function3">
+            <h3>Fetch Posts by User</h3>
+            <p>Specify the user whose posts you'd like to fetch.</p>
+            <input id="userNo" type="number" name="userNo" placeholder="User No."/>
+            <button onclick="userSearch()" id="userFetchButton" type="button">Fetch User Posts</button>
+            <p id="function3Text"></p>
+            <p id="function3Result"></p>
+        </section>
+        <script src="C:\Users\Gruff\Documents\Documents\DevPortfolio\EAS Application\EAS_app.js"></script>
+    </body>
+</html>
